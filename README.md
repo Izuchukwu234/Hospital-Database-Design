@@ -44,27 +44,27 @@ The database is organized into schemas to enhance performance and security:
 Contains the Auth_Password table for handling login details.
 
 ###### Stored Procedures and Functions
-- addWithHashedPassword
+- addWithHashedPassword:
 Adds users with hashed passwords for security.
 
-- uspNewPatient
+- uspNewPatient:
 Inserts new patient records with transaction management.
 
-- update_doc_details
+- update_doc_details:
 Updates doctor details.
 
-- fetch_diagnosis_alergies_today
+- fetch_diagnosis_alergies_today:
 Retrieves diagnosis and allergies for patients with appointments today.
 
-- remove_completed_app
+- remove_completed_app:
 Deletes completed appointments and related medical records.
 
 ###### Views
-- appointment_view
+- appointment_view:
 Provides a consolidated view of all appointments (past and current), doctor details, department information, and patient reviews.
 
 ###### Triggers
-- update_app_status
+- update_app_status:
 Automatically updates appointment status to 'Available' when an appointment is canceled.
 
 ###### Security
